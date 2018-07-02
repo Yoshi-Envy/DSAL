@@ -3,7 +3,7 @@ package arrays;
 public class Node {
 	
 	private String name; // key field
-	private String address; 
+	private String address; // Long edited
 	
 	public Node() {
 	}
