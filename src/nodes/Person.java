@@ -42,6 +42,16 @@ public class Person implements KeyMode {
 	public void setWeight(float weight) {
 		this.weight = weight;
 	}
+	
+	@Override
+	public String getKey() {
+		return key;
+	}
+
+	@Override
+	public void setKey(Object key) {
+		this.key = (String) key;
+	}
 
 	@Override
 	public Object deepCopy() {
@@ -57,15 +67,6 @@ public class Person implements KeyMode {
 	public String toString() {
 		return String.format("| %-5s | %-10s | %-5d | %-8.2f |", key, name, age, weight);
 	}
-
-	@Override
-	public String getKey() {
-		return key;
-	}
-
-	@Override
-	public void setKey(Object key) {
-		this.key = (String) key;
-	}
+	
 
 }

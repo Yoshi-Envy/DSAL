@@ -39,6 +39,7 @@ public class SmartPhone implements KeyMode {
 
 	@Override
 	public String toString() {
-		return String.format("| %-10s | %-15s | %-8.2f |", key, name, price);
+		return "SmartPhone [key=" + key + ", name=" + name + ", price=" + price + "]";
 	}
+	
 }
