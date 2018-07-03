@@ -2,7 +2,7 @@ package datastructures.arrays;
 
 import datastructures.BasicOperation;
 import nodes.KeyMode;
-import nodes.Person;
+import nodes.SmartPhone;
 
 public class UnsortedArray<T> implements BasicOperation<T> {
 
@@ -89,22 +89,22 @@ public class UnsortedArray<T> implements BasicOperation<T> {
 	}
 
 	public static void main(String[] args) {
-		UnsortedArray<Person> ds = new UnsortedArray<>(10);
+		UnsortedArray<SmartPhone> ds = new UnsortedArray<>(10);
 
-		ds.insert(new Person("1", "Fizz", 23, 33.0F));
-		ds.insert(new Person("2", "Jax", 28, 70.0F));
-		ds.insert(new Person("3", "Alistar", 15, 90.0F));
-		ds.insert(new Person("4", "Vladimir", 49, 65.0F));
-		ds.insert(new Person("5", "Darius", 35, 73.0F));
-		ds.insert(new Person("6", "Garen", 33, 70.0F));
-		ds.insert(new Person("7", "Mundo", 36, 80.5F));
-		ds.insert(new Person("8", "Corkie", 50, 50.0F));
-		ds.insert(new Person("9", "Kalista", 18, 45.0F));
-		ds.insert(new Person("10", "Teemo", 21, 15.2F));
+		ds.insert(new SmartPhone("1", "Fizz",  33.0F));
+		ds.insert(new SmartPhone("2", "Jax",  70.0F));
+		ds.insert(new SmartPhone("3", "Alistar", 90.0F));
+		ds.insert(new SmartPhone("4", "Vladimir",  65.0F));
+		ds.insert(new SmartPhone("5", "Darius",  73.0F));
+		ds.insert(new SmartPhone("6", "Garen",  70.0F));
+		ds.insert(new SmartPhone("7", "Mundo",  80.5F));
+		ds.insert(new SmartPhone("8", "Corkie", 50.0F));
+		ds.insert(new SmartPhone("9", "Kalista",  45.0F));
+		ds.insert(new SmartPhone("10", "Teemo",  15.2F));
 
 		ds.display();
 
-		System.out.println(ds.delete("11"));
+		// System.out.println(ds.delete("11"));
 
 		ds.display();
 
